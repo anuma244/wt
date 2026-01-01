@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+        form {
+            width: 650px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<form action="#" method="post">
+
+    <h2>Registration Form</h2>
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Full Name:
+            <input type="text" name="fullname" required>
+        </label>
+
+        <label>Username:
+            <input type="text" name="username" placeholder="Enter username">
+        </label>
+
+        <label>Password:
+            <input type="password" name="password">
+        </label>
+
+        <label>Email:
+            <input type="email" name="email">
+        </label>
+
+        <label>Phone:
+            <input type="tel" name="phone">
+        </label>
+
+        <label>Age:
+            <input type="number" name="age" min="1" max="100">
+        </label>
+
+        <label>Date of Birth:
+            <input type="date" name="dob">
+        </label>
+
+        <label>Birth Time:
+            <input type="time" name="birthtime">
+        </label>
+
+        <label>Datetime Local:
+            <input type="datetime-local">
+        </label>
+    </fieldset>
+
+    <!-- Gender -->
+    <fieldset>
+        <legend>Gender</legend>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+    </fieldset>
+
+    <!-- Preferences -->
+    <fieldset>
+        <legend>Preferences</legend>
+
+        <label>
+            <input type="checkbox" name="skills" value="html"> HTML
+        </label>
+        <label>
+            <input type="checkbox" name="skills" value="css"> CSS
+        </label>
+        <label>
+            <input type="checkbox" name="skills" value="js"> JavaScript
+        </label>
+
+        <label>Favorite Color:
+            <input type="color" name="color">
+        </label>
+
+        <label>Experience Level:
+            <input type="range" min="0" max="10">
+        </label>
+    </fieldset>
+
+    <!-- Dropdowns -->
+    <fieldset>
+        <legend>Education</legend>
+
+        <label>Country:
+            <select name="country">
+                <option value="">Select</option>
+                <option>Nepal</option>
+                <option>India</option>
+                <option>USA</option>
+            </select>
+        </label>
+
+        <label>Course:
+            <select>
+                <optgroup label="Computer">
+                    <option>BCA</option>
+                    <option>BSc CS</option>
+                </optgroup>
+                <optgroup label="Management">
+                    <option>BBA</option>
+                    <option>BBS</option>
+                </optgroup>
+            </select>
+        </label>
+    </fieldset>
+
+    <!-- Datalist -->
+    <label>City:
+        <input list="cities">
+        <datalist id="cities">
+            <option value="Kathmandu">
+            <option value="Pokhara">
+            <option value="Lalitpur">
+        </datalist>
+    </label>
+
+    <!-- File Upload -->
+    <label>Upload Photo:
+        <input type="file">
+    </label>
+
+    <!-- URL and Search -->
+    <label>Website:
+        <input type="url">
+    </label>
+
+    <label>Search:
+        <input type="search">
+    </label>
+
+    <!-- Month & Week -->
+    <label>Joining Month:
+        <input type="month">
+    </label>
+
+    <label>Week:
+        <input type="week">
+    </label>
+
+    <!-- Textarea -->
+    <label>About Yourself:
+        <textarea rows="4"></textarea>
+    </label>
+
+    <!-- Hidden -->
+    <input type="hidden" value="form123">
+
+    <!-- Buttons -->
+    <button type="submit">Register</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
